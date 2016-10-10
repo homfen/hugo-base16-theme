@@ -514,3 +514,21 @@ pre { background: #2d2d2d; color: #f2f0ec }
 .hljs {
     background: none;
 }
+
+article.single pre {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border: 1px solid slategrey;
+    border-radius: 6px;
+}
