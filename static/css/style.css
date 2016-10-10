@@ -520,7 +520,7 @@ article.single pre {
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
 
 body::-webkit-scrollbar-track {
@@ -530,5 +530,5 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     border: 1px solid slategrey;
-    border-radius: 6px;
+    border-radius: 4px;
 }
