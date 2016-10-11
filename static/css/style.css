@@ -520,7 +520,7 @@ article.single pre {
 }
 
 code::-webkit-scrollbar {
-    width: 8px;
+    height: 8px;
 }
 
 code::-webkit-scrollbar-track {
