@@ -334,7 +334,7 @@ article.single section.body h6 { color: #747369; }
 article.single section.body a { color: #d27b53; }
 
 /* Article Elements */
-
+article.list-item pre,
 article.single pre {
   margin-top: 0;
   margin-bottom: 16px;
@@ -515,6 +515,7 @@ pre { background: #2d2d2d; color: #f2f0ec }
     background: none;
 }
 
+article.list-item pre,
 article.single pre {
     overflow: hidden;
 }
