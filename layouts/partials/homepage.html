@@ -3,7 +3,12 @@
 
   {{ partial "hero.html" . }}
 
-  <h1 class="headline">Recent Posts</h1>
+  <h1 class="headline">
+      Recent Posts
+      <div class="meta">
+          <a href="/post"><span class="val">All posts</span></a>
+      </div>
+  </h1>
 
   <div class="article-list">
     {{ range first 3 (where .Data.Pages "Section" "post") }}
