@@ -7,7 +7,7 @@
 
     <div class="article-list">
         <article class="list-item" itemscope itemtype="http://schema.org/Blog">
-        {{ range .Data.Pages }}
+        {{ range (where .Data.Pages "Section" "post") }}
             {{ $dateMissing := eq .Date.Year 1}}
               <h2 class="headline" itemprop="headline">
                   <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} (Draft){{ end }}</a>
