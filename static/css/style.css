@@ -525,9 +525,15 @@ article.single pre {
 }
 
 .headline .meta {
+    font-size: 16px;
+    line-height: 1.8rem;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.headline .meta a {
+    color: #6699cc;
 }
 
 code::-webkit-scrollbar {
