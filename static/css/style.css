@@ -527,6 +527,9 @@ article.single pre {
 .headline .meta {
     font-size: 16px;
     line-height: 1.8rem;
+}
+
+h1.headline .meta {
     text-align: right;
 }
 
