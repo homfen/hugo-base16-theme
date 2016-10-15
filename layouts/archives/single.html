@@ -1,5 +1,20 @@
 {{ partial "header.html" . }}
 
-{{ partial "archives.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+<main role="main" class="homepage">
+
+    {{ partial "hero.html" . }}
+
+    <h1 class="headline">Archives</h1>
+
+    <div class="article-list">
+        <article class="list-item" itemscope itemtype="http://schema.org/Blog">
+        {{ range (where .Data.Pages "Section" "post") }}
+            {{ partial "archive-item.html" . }}
+        {{ end }}
+        </article>
+    </div>
+
+</main>
 
 {{ partial "footer.html" . }}
