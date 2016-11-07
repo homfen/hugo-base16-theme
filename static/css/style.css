@@ -315,6 +315,10 @@ article.single section.body {
   padding-bottom: 3rem;
 }
 
+article.single section.body p img{
+    max-width: 100%;
+}
+
 @media (max-width: 52em) {
   article.single section.body {
     padding-top: 2rem;
