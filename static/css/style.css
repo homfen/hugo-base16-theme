@@ -561,8 +561,11 @@ code::-webkit-scrollbar-thumb {
 }
 
 .all-posts{
-    color: #cc99cc;
     padding: 1em 0;
     text-align: right;
+}
+
+.all-posts a {
+    color: #cc99cc;
     font-weight: bold;
 }
