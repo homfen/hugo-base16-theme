@@ -556,6 +556,10 @@ code::-webkit-scrollbar-thumb {
     border-radius: 4px;
 }
 
+.article-list article.list-item:last-child {
+    margin-bottom: 0;
+}
+
 .all-posts{
     color: #6699cc;
     padding: 1em 0;
