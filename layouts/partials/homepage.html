@@ -5,15 +5,16 @@
 
   <h1 class="headline">
       Recent Posts
-      <div class="meta">
-          <a href="/post"><span class="val">All Posts >>></span></a>
-      </div>
   </h1>
 
   <div class="article-list">
     {{ range first 3 (where .Data.Pages "Section" "post") }}
       {{ partial "article-list-item.html" . }}
     {{ end }}
+  </div>
+
+  <div class="all-posts">
+      <a href="/post"><span class="val">All Posts >>></span></a>
   </div>
 
 {{ with .Site.Taxonomies.categories }}
