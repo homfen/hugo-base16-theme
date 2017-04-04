@@ -228,6 +228,7 @@ footer a {
 .homepage .tag,
 .homepage .tag a {
   color: #cc99cc;
+  white-space: nowrap;
 }
 
 .homepage .tag {
