@@ -28,17 +28,19 @@
     {{ .Content }}
   </section>
   <section class="body" style="margin-top: 2rem;">
-    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+    <div id="disqus_thread"></div>
     <script>
-    var cloudTieConfig = {
-      url: document.location.href, 
-      sourceId: "",
-      productKey: "ad61483be11b4fa5be94d4fbbb025e71",
-      target: "cloud-tie-wrapper"
+    var disqus_config = function () {
+        this.page.url = '{{ .Site.BaseURL }}{{ .Date.Format "2006/01/02" }}/{{ .Title }}';
+        this.page.identifier = '{{ .Title }}';
     };
-    var yunManualLoad = true;
-    Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+    (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//homfensblog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
     </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </section>
 </article>
