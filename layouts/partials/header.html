@@ -7,10 +7,10 @@
 <meta name="author" content="{{ .Site.Params.author }}">
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="{{ "/static/images/favicon.ico" | absURL }}">
-<link rel="stylesheet" href="{{ "/static/css/sourcecodepro.css" | absURL }}" type="text/css">
-<link rel="stylesheet" href="{{ "/static/plugin/highlight/styles/solarized-dark.css" | absURL }}">
-<link rel="stylesheet" href="{{ "/static/css/style.css" | absURL }}" type="text/css">
+<link rel="icon" href="{{ "/images/favicon.ico" | absURL }}">
+<link rel="stylesheet" href="{{ "/css/sourcecodepro.css" | absURL }}" type="text/css">
+<link rel="stylesheet" href="{{ "/plugin/highlight/styles/solarized-dark.css" | absURL }}">
+<link rel="stylesheet" href="{{ "/css/style.css" | absURL }}" type="text/css">
 <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
