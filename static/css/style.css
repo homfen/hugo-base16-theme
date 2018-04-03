@@ -569,3 +569,34 @@ code::-webkit-scrollbar-thumb {
     color: #cc99cc;
     font-weight: bold;
 }
+
+.page-footer {
+    margin-top: 1rem;
+    display: none;
+}
+.page-footer::after {
+    content: '';
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.page-footer a {
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+.page-footer a:hover {
+    outline: none;
+}
+.page-footer .previous {
+    background: red;
+    float: left;
+}
+.page-footer .next {
+    background: blue;
+    float: right;
+}

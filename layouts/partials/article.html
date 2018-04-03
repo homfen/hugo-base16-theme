@@ -27,12 +27,17 @@
   <section class="body" itemprop="articleBody">
     {{ .Content }}
   </section>
+  <div class="page-footer">
+    <a class="previous" href="{{ .Prev }}">Previous</a>
+    <a class="next" href="{{ .Next }}">Next</a>
+  </div>
   <section class="body" style="margin-top: 2rem;">
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
-        this.page.url = '{{ .Site.BaseURL }}{{ .Date.Format "2006/01/02" }}/{{ .Title }}';
-        this.page.identifier = '{{ .Title }}';
+        this.page.url = 'https:{{ .Site.BaseURL }}{{ .URL }}';
+        this.page.title = '{{  .Title }}';
+        this.page.identifier = '{{ .UniqueID }}';
     };
     (function() {
     var d = document, s = d.createElement('script');
