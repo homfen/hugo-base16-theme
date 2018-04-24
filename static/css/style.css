@@ -348,7 +348,7 @@ article.single pre {
   overflow-x: scroll;
   border-radius: 3px;
   padding: 32px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 article.single p code {
@@ -356,6 +356,7 @@ article.single p code {
   border-radius: 4px;
   background: #747369;
   color: #f2f0ec;
+  line-height: 1.5em;
 }
 
 article.single figure {
