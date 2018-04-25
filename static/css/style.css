@@ -52,13 +52,9 @@ article.single section,
 .article-list article {
   background-color: #f2f0ec;
   color: #2d2d2d;
-  padding-left: 128px;
-  padding-left: 8rem;
-  padding-right: 128px;
-  padding-right: 8rem;
-  padding-top: 16px;
+  padding-left: 4rem;
+  padding-right: 4rem;
   padding-top: 1rem;
-  padding-bottom: 16px;
   padding-bottom: 1rem;
 }
 
@@ -243,11 +239,8 @@ footer a {
 }
 
 .article-list article {
-  padding-top: 64px;
-  padding-top: 4rem;
-  padding-bottom: 64px;
-  padding-bottom: 4rem;
-  margin-bottom: 64px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -311,9 +304,9 @@ article.single h1.headline {
 
 article.single section.body {
   padding-top: 64px;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 48px;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   line-height: 2em;
 }
 
