@@ -8,7 +8,7 @@
   </h1>
 
   <div class="article-list">
-    {{ range first 3 (where .Data.Pages "Section" "post") }}
+    {{ range first 5 (where .Data.Pages "Section" "post") }}
       {{ partial "article-list-item.html" . }}
     {{ end }}
   </div>

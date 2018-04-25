@@ -248,6 +248,7 @@ footer a {
 .article-list article h2.headline a {
   margin-top: 0;
   color: #6699cc;
+  text-decoration: none;
 }
 
 .article-list article .meta {
