@@ -5,11 +5,11 @@
 
     {{ partial "hero.html" . }}
 
-    <h1 class="list-title">{{ .Title }}</h1>
+    <h1 class="headline">Archive</h1>
 
     <div class="article-list">
         {{ range .Data.Pages.GroupByDate "2006" }}
-            <h2>--{{ .Key }}:</h2>
+            <h2>{{ .Key }}:</h2>
             <article class="list-item" itemscope itemtype="http://schema.org/Blog">
             {{ range .Pages }}
                 {{ partial "archive-item.html" . }}
